@@ -16,3 +16,4 @@
 
 * [iForce](https://github.com/palaniraja/iForce)
 * [OAuth2 Salesforce username & password API REST doc](http://www.salesforce.com/us/developer/docs/api_rest/index_Left.htm#CSHID=intro_understanding_web_server_oauth_flow.htm|StartTopic=Content%2Fintro_understanding_web_server_oauth_flow.htm|SkinName=webhelp)
+* [dahugobez](https://github.com/dahugobez/SFTools/tree/master/SublimeApexLogReader)
