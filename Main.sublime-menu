@@ -1,0 +1,49 @@
+[
+	{
+	    "id": "iForce",
+	    "caption": "iForce",
+	    "children":
+	    [
+	        {
+	        	"id": "projects",
+	    		"caption": "Project",
+	         	"children":
+	         	[
+	         		{
+	         			"caption": "Start New Project",
+	         			"command": "iforce_start_new_project"
+	         		},
+	         		{
+	         			"caption": "Refresh from server",
+	         			"command": "iforce_refresh_from_server"
+	         		}
+	         	]
+	     	},
+			{
+	        	"id": "buildfiles",
+	    		"caption": "Build Files",
+	         	"children":
+	         	[
+	         		{
+	         			"caption": "Quick Complile",
+	         			"command": "iforce_quick_compile"
+	         		},
+	         		{
+	         			"caption": "Quick Complile all open files",
+	         			"command": "iforce_quick_compile_all"
+	         		}
+	         	]
+	     	},
+	     	{
+	        	"id": "iforce_about",
+	    		"caption": "About",
+	    		"command": "iforce_goto_github"
+	     	},
+	     	{
+	        	"id": "logs",
+	    		"caption": "Get Logs", 
+	    		"command": "iforce_get_logs"
+	     	}
+	    ]
+	}
+]

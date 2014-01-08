@@ -1,0 +1,74 @@
+29.0 APEX_PROFILING,INFO
+Execute Anonymous: insert new Opportunity(StageName='New',CloseDate=Date.today(), Name='test');
+16:35:33.211 (211520000)|EXECUTION_STARTED
+16:35:33.211 (211536000)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+16:35:33.571 (571172000)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Opportunity:new
+16:35:33.571 (571453000)|CODE_UNIT_FINISHED|Validation:Opportunity:new
+16:35:34.972 (1972521000)|CODE_UNIT_STARTED|[EXTERNAL]|01q200000008hv3|OpportunityAfterInsert on Opportunity trigger event AfterInsert for [006g0000003LETO]
+16:35:35.836 (2028260000)|CUMULATIVE_LIMIT_USAGE
+16:35:35.836|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Number of code statements: 21 out of 200000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 10
+  Number of Email Invocations: 0 out of 10
+  Number of fields describes: 0 out of 100
+  Number of record type describes: 0 out of 100
+  Number of child relationships describes: 0 out of 100
+  Number of picklist describes: 0 out of 100
+  Number of future calls: 0 out of 10
+
+16:35:35.836|CUMULATIVE_LIMIT_USAGE_END
+
+16:35:35.028 (2028332000)|CODE_UNIT_FINISHED|OpportunityAfterInsert on Opportunity trigger event AfterInsert for [006g0000003LETO]
+16:35:35.030 (2030476000)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:Opportunity
+16:35:35.188 (2188396000)|CODE_UNIT_STARTED|[EXTERNAL]|01q200000008fIG|OpportunityBeforeUpdate on Opportunity trigger event BeforeUpdate for [006g0000003LETO]
+16:35:36.004 (2195532000)|CUMULATIVE_LIMIT_USAGE
+16:35:36.004|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Number of code statements: 28 out of 200000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 10
+  Number of Email Invocations: 0 out of 10
+  Number of fields describes: 0 out of 100
+  Number of record type describes: 0 out of 100
+  Number of child relationships describes: 0 out of 100
+  Number of picklist describes: 0 out of 100
+  Number of future calls: 0 out of 10
+
+16:35:36.004|CUMULATIVE_LIMIT_USAGE_END
+
+16:35:35.195 (2195604000)|CODE_UNIT_FINISHED|OpportunityBeforeUpdate on Opportunity trigger event BeforeUpdate for [006g0000003LETO]
+16:35:35.256 (2256298000)|CODE_UNIT_FINISHED|Workflow:Opportunity
+16:35:36.242 (2433539000)|CUMULATIVE_LIMIT_USAGE
+16:35:36.242|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Number of code statements: 28 out of 200000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 10
+  Number of Email Invocations: 0 out of 10
+  Number of fields describes: 0 out of 100
+  Number of record type describes: 0 out of 100
+  Number of child relationships describes: 0 out of 100
+  Number of picklist describes: 0 out of 100
+  Number of future calls: 0 out of 10
+
+16:35:36.242|CUMULATIVE_LIMIT_USAGE_END
+
+16:35:35.433 (2433574000)|CODE_UNIT_FINISHED|execute_anonymous_apex
+16:35:35.433 (2433591000)|EXECUTION_FINISHED
