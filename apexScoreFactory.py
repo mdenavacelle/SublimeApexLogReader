@@ -3,6 +3,9 @@
 '''
 apexScoreFactory
 
+Version 1
+Martin de Navacelle
+
 '''
 usage = '''
 
