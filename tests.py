@@ -1,3 +1,5 @@
+# coding=UTF-8
+
 import unittest
 from apexlog import *
 
@@ -69,7 +71,7 @@ class test_log_parser_test(unittest.TestCase):
   Number of SOSL queries: 0 out of 20
   Number of DML statements: 0 out of 150
   Number of DML rows: 0 out of 10000
-  Number of code statements: 50 out of 200000
+  Number of code statements: 50 out of 200000 ******* CLOSE TO LIMIT
   Maximum CPU time: 0 out of 10000
   Maximum heap size: 0 out of 6000000
   Number of callouts: 0 out of 10
@@ -173,7 +175,7 @@ class test_log_parser_test(unittest.TestCase):
 10:05:45.563 (516991000)|CUMULATIVE_LIMIT_USAGE
 10:05:45.563|LIMIT_USAGE_FOR_NS|(default)|
   Number of SOQL queries: 1 out of 100
-  Number of query rows: 1 out of 50000
+  Number of query rows: 1 out of 50000 
   Number of SOSL queries: 0 out of 20
   Number of DML statements: 0 out of 150
   Number of DML rows: 0 out of 10000

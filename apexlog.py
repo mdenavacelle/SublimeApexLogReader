@@ -19,6 +19,8 @@ class ApexLog():
 		return (self.id is None) or	(self.time is None) or	(self.version is None) or	(self.log_levels is None) or	(self.body is None)
 
 	def populate(self, rawData, filename):
+		if len(rawData) < 1:
+			quit('Empty Data')
 		self.rawBody = rawData
 
 		self.filename = filename
@@ -34,6 +36,7 @@ class ApexLog():
 			self.log_levels = firstline.split(' ')[1]
 			self.body = rawData.split(firstline)[1][1:]
 		except:
+			print('Erreur')
 			None # No Header
 
 
@@ -155,6 +158,11 @@ class ApexScoreLog(ApexLog):
 				continue
 			l += 1
 
+		# error control
+		if len(self.cumulativesIndexes) == 0:
+			raise Exception('Log format probably not valid: no cumulative limits found')
+
+
 	def CSVScoreLine(self, index):
 		scores = list()
 		for j in self.cumulatives(index).split('\n'):
@@ -163,6 +171,8 @@ class ApexScoreLog(ApexLog):
 				amountEnd = j[amountStart:].find(' ') + amountStart
 				amount = j[amountStart:amountEnd]
 				total  = j[amountEnd+8:]
+				if total.find('*') != -1: # **** CLOSE TO LIMIT
+					total = total[:total.find('*')-1]
 				score = '=' + str(amount) + '/' + str(total)
 				scores.append(score)
 
