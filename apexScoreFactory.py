@@ -34,7 +34,7 @@ def quitter(message):
 opts = sys.argv[1:2]
 
 if len(opts) == 0:
-	quitter(usage)
+	quitter()
 
 opts = opts[0]
 
@@ -48,7 +48,7 @@ except IOError:
 print('Extracting Score...')
 log = ApexScoreLog()
 
-log.populate(open('./'+opts).read(), opts)
+log.populate(open(opts).read(), opts)
 
 if log.version != '28.0':
 	raise Exception('Version non valide '+log.version)

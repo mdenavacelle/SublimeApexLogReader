@@ -8,9 +8,10 @@
 * ~~télécharger la totalité des logs~~
 * ~~pas de doublons~~
 * colorisation syntaxique
-* unit tests
-* découpler de iForce
+* ~~unit tests~~
+* ~~découpler de iForce~~
 * autocompletion
+* gestion de startTest() et stopTest()
 
 ##Doc
 
