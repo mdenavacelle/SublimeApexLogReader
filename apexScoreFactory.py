@@ -50,8 +50,8 @@ log = ApexScoreLog()
 
 log.populate(open(opts).read(), opts)
 
-if log.version != '28.0':
-	raise Exception('Version non valide '+log.version)
+#if log.version != '28.0':
+#	raise Exception('Version non valide '+log.version)
 
 csvScore = log.scoreAsCSV()
 

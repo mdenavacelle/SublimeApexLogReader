@@ -12,6 +12,7 @@
 * ~~découpler de iForce~~
 * autocompletion
 * gestion de startTest() et stopTest()
+* code statements n'est plus une limite depuis Spring '14
 
 ##Doc
 
